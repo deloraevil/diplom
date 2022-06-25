@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.props')" />
+  <Import Project="..\packages\cef.redist.x86.102.0.9\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.102.0.9\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.102.0.9\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.102.0.9\build\cef.redist.x64.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29E133A7-55B5-43C3-AAD3-CA50C3F824D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApp1</RootNamespace>
+    <AssemblyName>WpfApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdonisUI, Version=1.17.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdonisUI.1.17.1\lib\net45\AdonisUI.dll</HintPath>
+    </Reference>
+    <Reference Include="AdonisUI.ClassicTheme, Version=1.17.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdonisUI.ClassicTheme.1.17.1\lib\net45\AdonisUI.ClassicTheme.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp, Version=102.0.90.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.102.0.90\lib\net452\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=102.0.90.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.102.0.90\lib\net452\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Wpf, Version=102.0.90.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Wpf.102.0.90\lib\net462\CefSharp.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Qiwi.BillPayments, Version=0.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Qiwi.BillPayments.0.1.5\lib\net45\Qiwi.BillPayments.dll</HintPath>
+    </Reference>
+    <Reference Include="QiwiShop, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Qiwi.1.0.12\lib\QiwiShop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.3.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.3.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App_Start\Qiwi.cs" />
+    <Compile Include="For_message.cs" />
+    <Compile Include="Model\Admins.cs" />
+    <Compile Include="Model\Clients.cs" />
+    <Compile Include="Model\Client_game_library_proms.cs" />
+    <Compile Include="Model\Email_code.cs" />
+    <Compile Include="Model\Games.cs" />
+    <Compile Include="Model\Qiwi_me.cs" />
+    <Compile Include="Model\Roles.cs" />
+    <Compile Include="Model\System_info.cs" />
+    <Compile Include="Model\System_info_qiwi.cs" />
+    <Compile Include="Navigation_me.cs" />
+    <Compile Include="ViewModel\Add_comand_admin.cs" />
+    <Compile Include="ViewModel\Add_comand_all_users.cs" />
+    <Compile Include="ViewModel\Add_comand_clients.cs" />
+    <Compile Include="ViewModel\Add_comand_games.cs" />
+    <Compile Include="ViewModel\Add_comand_role.cs" />
+    <Compile Include="ViewModel\Add_comand_system_info.cs" />
+    <Compile Include="ViewModel\Admin_pannel_View_Model.cs" />
+    <Compile Include="ViewModel\Email_code_view_model.cs" />
+    <Compile Include="ViewModel\See_games_viewmodel.cs" />
+    <Compile Include="View\Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Email_code.xaml.cs">
+      <DependentUpon>Email_code.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Field_add_admin.xaml.cs">
+      <DependentUpon>Field_add_admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Field_add_all_users.xaml.cs">
+      <DependentUpon>Field_add_all_users.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Field_add_clients.xaml.cs">
+      <DependentUpon>Field_add_clients.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Field_add_games.xaml.cs">
+      <DependentUpon>Field_add_games.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Field_add_role.xaml.cs">
+      <DependentUpon>Field_add_role.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Field_add_system_info.xaml.cs">
+      <DependentUpon>Field_add_system_info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Identification_vxod.xaml.cs">
+      <DependentUpon>Identification_vxod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Page_user_menu_all_games.xaml.cs">
+      <DependentUpon>Page_user_menu_all_games.xaml</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Page_user_menu_my_games.xaml.cs">
+      <DependentUpon>Page_user_menu_my_games.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Qiwi_oplata.xaml.cs">
+      <DependentUpon>Qiwi_oplata.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Selected_item_to_pay.xaml.cs">
+      <DependentUpon>Selected_item_to_pay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Window_to_search_banned_users.xaml.cs">
+      <DependentUpon>Window_to_search_banned_users.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Window_to_search_game_name.xaml.cs">
+      <DependentUpon>Window_to_search_game_name.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Window_to_search_surname.xaml.cs">
+      <DependentUpon>Window_to_search_surname.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Window_user_menu.xaml.cs">
+      <DependentUpon>Window_user_menu.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Email_code.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Field_add_admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Field_add_all_users.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Field_add_clients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Field_add_games.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Field_add_role.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Field_add_system_info.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Identification_vxod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Context\All_user_context.cs" />
+    <Compile Include="Model\All_users.cs" />
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModel\All_user_View_Model.cs" />
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\Page_user_menu_all_games.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Page_user_menu_my_games.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Qiwi_oplata.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Selected_item_to_pay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Window_to_search_banned_users.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Window_to_search_game_name.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Window_to_search_surname.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Window_user_menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Qiwi.svc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x64.102.0.9\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.102.0.9\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.102.0.9\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.102.0.9\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.102.0.90\build\CefSharp.Common.targets')" />
+</Project>

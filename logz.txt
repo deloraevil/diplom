@@ -1,0 +1,18 @@
+1.ZetanChamp	Robotik		1
+4.Firepoint	LlamaDrama	2
+5.RichterScales	Hedonist	2
+6.Astra		CastleClimb	2
+7.Marling	Klaxxon53	2
+8.Peregrint	31Liber6tyDragon	2
+9.Slaughterhaus	Embe34rgl53aze	2
+10.Opally	Seashanty11	2
+
+xmlns:local="clr-namespace:WpfApp1"
+
+public===============================================================================================
+48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPs7whLcZgSGJ3sJxs4UbRdQqGQu9FWks5jGK2KWPmdEgqJ8CDDX86E9sVci67vcGj4mYTXabBWeJUbTS5TuYDPrtSaYY9wrMkTd9wGfRRg
+======================================================================================================
+
+secret===================================================================================================================
+eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6ImhjZmR5NC0wMCIsInVzZXJfaWQiOiI3OTIxNzQzMTEyOSIsInNlY3JldCI6IjEyNmRiZGFlYjNlYTA0NjQwYTVmMWJhNzg2NjhjMzNhOGZiYThhOTU3OGI4MjY0N2U1OTlhNGNlNzMxZDlmODIifX0=
+=====================================================================================================================================
